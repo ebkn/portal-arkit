@@ -27,21 +27,60 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQA-FM-TpL">
+                                <rect key="frame" x="30" y="617" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="go8-Le-8e3"/>
+                                </constraints>
+                                <state key="normal" title="SanFrancisco"/>
+                                <connections>
+                                    <action selector="firstPlaceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c0H-pf-zXF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjS-pN-9T9">
+                                <rect key="frame" x="137.5" y="617" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Lms-UX-xaK"/>
+                                </constraints>
+                                <state key="normal" title="Areskutan"/>
+                                <connections>
+                                    <action selector="secondPlaceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="orh-bV-eVR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIv-sP-X2s">
+                                <rect key="frame" x="245" y="617" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="yBm-h1-VoW"/>
+                                </constraints>
+                                <state key="normal" title="Yokohama"/>
+                                <connections>
+                                    <action selector="thirdPlaceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oU1-nf-QAO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="jQA-FM-TpL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2EZ-8U-1PM"/>
                             <constraint firstItem="XEC-Jw-auT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6rw-wF-UJH"/>
                             <constraint firstItem="3Jo-o1-BJ8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ELz-NT-e2W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kIv-sP-X2s" secondAttribute="bottom" constant="20" id="Kb8-XP-MWS"/>
                             <constraint firstAttribute="bottom" secondItem="3Jo-o1-BJ8" secondAttribute="bottom" id="LIc-mB-Xro"/>
                             <constraint firstItem="3Jo-o1-BJ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XCU-wV-CYF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Jo-o1-BJ8" secondAttribute="trailing" id="iNJ-7R-sN2"/>
                             <constraint firstItem="XEC-Jw-auT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="lXA-iW-NeR"/>
+                            <constraint firstItem="FjS-pN-9T9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mMH-n0-ncN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jQA-FM-TpL" secondAttribute="bottom" constant="20" id="no2-oH-UxT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FjS-pN-9T9" secondAttribute="bottom" constant="20" id="v3G-Az-akD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kIv-sP-X2s" secondAttribute="trailing" constant="30" id="wRm-Pu-WgO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="firstPlaceButton" destination="jQA-FM-TpL" id="EX8-sP-TlB"/>
                         <outlet property="planeDetected" destination="XEC-Jw-auT" id="4JN-m6-UPT"/>
                         <outlet property="sceneView" destination="3Jo-o1-BJ8" id="aci-gT-qdn"/>
+                        <outlet property="secondPlaceButton" destination="FjS-pN-9T9" id="Bis-Gi-QdX"/>
+                        <outlet property="thirdPlaceButton" destination="kIv-sP-X2s" id="H73-dE-w7g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
