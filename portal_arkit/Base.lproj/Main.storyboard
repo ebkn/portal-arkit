@@ -21,17 +21,26 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4v-FI-sSD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane Detected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJE-Tv-MfY">
+                                <rect key="frame" x="108.5" y="60" width="158" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="z4v-FI-sSD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CtE-o1-h98"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z4v-FI-sSD" secondAttribute="trailing" id="Dbh-eX-P7I"/>
+                            <constraint firstItem="vJE-Tv-MfY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V8s-7Z-2zY"/>
                             <constraint firstItem="z4v-FI-sSD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WFC-mi-9Vr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z4v-FI-sSD" secondAttribute="bottom" id="Xph-oi-jt1"/>
+                            <constraint firstItem="vJE-Tv-MfY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="clL-uz-oUC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="planeDetected" destination="vJE-Tv-MfY" id="NiJ-Ff-RfC"/>
                         <outlet property="sceneView" destination="z4v-FI-sSD" id="Qcn-8u-AG4"/>
                     </connections>
                 </viewController>
