@@ -21,38 +21,42 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Jo-o1-BJ8">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEC-Jw-auT">
-                                <rect key="frame" x="166.5" y="60" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQA-FM-TpL">
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQA-FM-TpL">
                                 <rect key="frame" x="30" y="617" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="go8-Le-8e3"/>
                                 </constraints>
-                                <state key="normal" title="SanFrancisco"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="SanFrancisco">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="firstPlaceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c0H-pf-zXF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjS-pN-9T9">
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjS-pN-9T9">
                                 <rect key="frame" x="137.5" y="617" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Lms-UX-xaK"/>
                                 </constraints>
-                                <state key="normal" title="Areskutan"/>
+                                <state key="normal" title="Areskutan">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="secondPlaceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="orh-bV-eVR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIv-sP-X2s">
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIv-sP-X2s">
                                 <rect key="frame" x="245" y="617" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="yBm-h1-VoW"/>
                                 </constraints>
-                                <state key="normal" title="Yokohama"/>
+                                <state key="normal" title="Yokohama">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="thirdPlaceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oU1-nf-QAO"/>
                                 </connections>
@@ -61,13 +65,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jQA-FM-TpL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2EZ-8U-1PM"/>
-                            <constraint firstItem="XEC-Jw-auT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6rw-wF-UJH"/>
                             <constraint firstItem="3Jo-o1-BJ8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ELz-NT-e2W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kIv-sP-X2s" secondAttribute="bottom" constant="20" id="Kb8-XP-MWS"/>
                             <constraint firstAttribute="bottom" secondItem="3Jo-o1-BJ8" secondAttribute="bottom" id="LIc-mB-Xro"/>
                             <constraint firstItem="3Jo-o1-BJ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XCU-wV-CYF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Jo-o1-BJ8" secondAttribute="trailing" id="iNJ-7R-sN2"/>
-                            <constraint firstItem="XEC-Jw-auT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="lXA-iW-NeR"/>
                             <constraint firstItem="FjS-pN-9T9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mMH-n0-ncN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jQA-FM-TpL" secondAttribute="bottom" constant="20" id="no2-oH-UxT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FjS-pN-9T9" secondAttribute="bottom" constant="20" id="v3G-Az-akD"/>
@@ -77,7 +79,6 @@
                     </view>
                     <connections>
                         <outlet property="firstPlaceButton" destination="jQA-FM-TpL" id="EX8-sP-TlB"/>
-                        <outlet property="planeDetected" destination="XEC-Jw-auT" id="4JN-m6-UPT"/>
                         <outlet property="sceneView" destination="3Jo-o1-BJ8" id="aci-gT-qdn"/>
                         <outlet property="secondPlaceButton" destination="FjS-pN-9T9" id="Bis-Gi-QdX"/>
                         <outlet property="thirdPlaceButton" destination="kIv-sP-X2s" id="H73-dE-w7g"/>
